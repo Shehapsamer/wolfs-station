@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+    <head>
+
+    <meta charset="UTF-8">
+    <title>سجل دخولك</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <link rel="icon" href="./img/logo.png" sizes="32x32">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    </head>
+    
+<body>
+<div class="image4k"></div>
+<div id="container"></div>
+<div class="app" id="App">
+
+<!-- navbar -->
+<div class="navbar">
+    <div class="menu">
+        <div id="sms" class="d-flex">
+            <i class="fa-solid fa-bars"></i>
+            <h3>القائمه</h3>
+        </div>
+        <img src="img/sun.png" class="moon_icon" id="moon_icon" alt="">
+        <div class="form-check form-switch form-switch_dark ">
+            <input class="form-check-input" type="checkbox" role="switch" id="darkMode">
+        </div>
+    </div>
+    <div class="nav-header">
+        <div class="nav-logo">
+            <a class="logo" href="./index.html"><img src="./img/logo.png" alt=""></a>
+        </div>
+    </div>
+    <div class="last">
+
+        <div onclick="open_lang() " class="lang_curanc">
+            <h4> اللغه : عربي </h4>
+            <h4> العمله : ريال سعودي </h4>
+        </div>
+        <div class="user">
+            <a href="./logIn.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+
+        <div class="cart">
+            <a href="./cart.html"><i class="fa-solid shopping-cart fa-bag-shopping"></i></a>
+            <span>12</span>
+            <h6>00.0 ر.س</h6>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+<div class="sidebar" id="sidebar">
+    <div onclick="close_sidebar()" class="close_sidebar"></div>
+    <div class="exit">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <div class="cont">
+
+        <div class="user">
+            <img src="./img/user.webp" alt="">
+            <h4>عبدالمجيد خالد</h4>
+        </div>
+
+        <ul>
+            <li> <a href="./catt.html"> لائحه الشرف </a> </li>
+            <li> <a href="./catt.html"> الدعم الفني </a> </li>
+            <li> <a href="./catt.html"> تتبع الطلب </a> </li>
+            <li> <a href="./catt.html"> اقسام المنتدي </a> </li>
+            <li> <a href="./catt.html"> تسجيل خروج </a> </li>
+        </ul>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- intro to pages -->
+<section class="intro_pages">
+<div class="container">
+
+    <div class="links mt-5">
+        <div class="container">
+            <h1>انشاء حساب</h1>
+            <ul>
+                <li> <a href="./index.html">الصفحة الرئيسية</a> </li>
+                >>
+                <li> <a href="./serveces.html">انشاء حساب</a> </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+<section class="Login forma" id="Login">
+<div class="contaoner">
+    <div class="images">
+        <img class="open_e"  src="./img/wolf.gif" alt="">
+        <img class="close_e"  src="./img/blog-image-5.jpg" alt="">
+    </div>
+    
+    <div class="switch">
+        <button onclick="forma_switch_remove()" class="add-to-cart log">تسجيل دخول</button>
+        <button onclick="forma_switch()" class="add-to-cart reg"> انشاء حساب </button>
+    </div>
+
+    <form action="" class="Login_form" >
+        <label for="">الايميل</label>
+        <input type="email" placeholder="" onfocus="change_login_img_2()">
+
+        <label for="">كلمه السر</label>
+        <input type="password" placeholder="" onfocus="change_login_img()"> 
+
+        <button class="add-to-cart">تسجيل</button>    
+    </form>
+
+    <form action="" class=" regist">
+        <label for="">الاسم</label>
+        <input type="text" placeholder="" onfocus="change_login_img_2()">
+        
+        <label for="">الايميل</label>
+        <input type="email" placeholder="" onfocus="change_login_img_2()">
+        
+        <label for="">رقم الهاتف</label>
+        <input type="number" placeholder="" onfocus="change_login_img_2()">
+        
+        <label for="">كلمه السر</label>
+        <input type="password" placeholder="" onfocus="change_login_img()">
+    
+        <button class="add-to-cart">تسجيل</button>
+    </form>
+
+
+
+</div>
+</section>
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+
+        <!-- scroll up -->
+        <span class="scroll_up"> العوده اي اعلي <i class="fa-solid fa-arrow-up"></i> </span>
+
+
+        <div class="row">
+            <div class="col-lg-3 col-md-12 text-center box">
+                <h3 class="wow bounceInUp"> <a href="./index.html"><img class="logo" src="./img/logo.png" alt=""></a>
+                </h3>
+
+                <p class="wow bounceInDown">نسعى إلى الإرتقاء بمستوى الجودة و الدقة لنواكب التطور التكنولوجى و تبسيط
+                    حلول الأعمال التقنية على المستخدم</p>
+
+                <ul class="payment">
+                    <li class="wow bounceInDown"> <img src="./img/payment_1.webp" alt=""> </li>
+                    <li class="wow bounceInUp"> <img src="./img/payment_2.webp" alt=""> </li>
+                    <li class="wow bounceInDown"> <img src="./img/payment_3.webp" alt=""> </li>
+                    <li class="wow bounceInUp"> <img src="./img/payment_4.webp" alt=""> </li>
+                    <li class="wow bounceInDown"> <img src="./img/payment_5.webp" alt=""> </li>
+                    <li class="wow bounceInUp"> <img src="./img/payment_6.webp" alt=""> </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 box">
+                <h3 class="wow bounceInUp">روابط تهمك</h3>
+
+                <ul class="links">
+                    <li class="wow bounceInDown"> <a href="./index.html"> الرئيسيه </a> </li>
+                    <li class="wow bounceInUp"> <a href="./about_us.html">تعرف علينا</a> </li>
+                    <li class="wow bounceInDown"> <a href="./blog.html">المنتدي</a> </li>
+                    <li class="wow bounceInDown"> <a href="./blog.html">سياسه الاسترجاع</a> </li>
+                    <li class="wow bounceInDown"> <a href="./blog.html">شركات تعاونا معها</a> </li>
+                    <li class="wow bounceInUp"> <a href="./contact_us.html">تواصل معنا</a> </li>
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 box ">
+                <h3>خدمه العملاء</h3>
+
+                <ul data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top" class="sochial sss">
+                    <li> <a class="pop_up" data-tooltip="mail" data-placement="top" href="#"><i
+                                class="fa-solid fa-envelope"></i></a> </li>
+                    <li>
+                        <a class="pop_up" data-tooltip="whatsapp" data-placement="top" href="
+                    https://api.whatsapp.com/send?phone=+201002704948&text=%D9%85%D9%85%D9%83%D9%86_%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1               
+            "><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 contact box">
+                <h3 class="wow bounceInUp"> تواصل معنا </h3>
+
+                <ul class="wow bounceInUp">
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span><a class="phone" href="tel:01002704948">01002704948</a></span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <span>wolfs@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>القاهره</span>
+                    </li>
+
+
+
+                </ul>
+
+                <ul class="sochial wow bounceInUp">
+                    <li> <a class="pop_up" data-tooltip="linkedin" data-placement="top" href="#"><i
+                                class="fa-brands fa-linkedin"></i></a> </li>
+                    <li> <a class="pop_up" data-tooltip="instagram" data-placement="top" href="#"><i
+                                class="fa-brands fa-instagram"></i></a> </li>
+                    <li> <a class="pop_up" data-tooltip="twitter" data-placement="top" href="#"><i
+                                class="fa-brands fa-twitter"></i></a> </li>
+                    <li> <a class="pop_up" data-tooltip="facebook" data-placement="top" href="#"><i
+                                class="fa-brands fa-facebook-f"></i></a> </li>
+                    <li> <a class="pop_up" data-tooltip="pinterest" data-placement="top" href="#"><i
+                                class="fa-brands fa-pinterest"></i></a> </li>
+                    <li> <a class="pop_up" data-tooltip="youtube" data-placement="top" href="#"><i
+                                class="fa-brands fa-youtube"></i></a> </li>
+                    <li> <a class="pop_up" data-tooltip="google" data-placement="top" href="#"><i
+                                class="fa-brands fa-google-play"></i></a> </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="last_foot ">
+            <ul>
+                <li class=" wow bounceInUp">© جميع الحقوق محفوظة الى Wolfs Station </li>
+                <li class=" wow bounceInDown"> تم التصميم بواسطه <a href="https://www.egypt-code.com/">EgyptCode</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<div class="WahtsApp">
+    <a href="
+     https://api.whatsapp.com/send?phone=+201002704948&text=%D9%85%D9%85%D9%83%D9%86_%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1               
+"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+
+
+<div class="lang" id="lang">
+
+    <div onclick="close_lang()" class="close"></div>
+    <form action="">
+
+        <h3> اللغه </h3>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+                عربي
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+                English
+            </label>
+        </div>
+
+
+        <h3> العمله </h3>
+        <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected value="1">ريال سعودي</option>
+                <option value="2">ريال قطري</option>
+                <option value="3">دولار</option>
+                <option value="4">يررو</option>
+            </select>
+        </div>
+        <button class="add-to-cart"> تثبيت </button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/all.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
