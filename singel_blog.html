@@ -25,6 +25,13 @@
         <div class="form-check form-switch form-switch_dark ">
             <input class="form-check-input" type="checkbox" role="switch" id="darkMode">
         </div>
+
+        <div class="search_icon" onclick="fucas()">
+            <button class="" data-bs-target="#exampleModalToggle_search" data-bs-toggle="modal">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
     </div>
     <div class="nav-header">
         <div class="nav-logo">
@@ -44,11 +51,12 @@
         <div class="cart">
             <a href="./cart.html"><i class="fa-solid shopping-cart fa-bag-shopping"></i></a>
             <span>12</span>
-            <h6>00.0 ر.س</h6>
+            <h6>00.0 <br> ر.س</h6>
         </div>
 
 
     </div>
+
 
 
 
@@ -63,6 +71,7 @@
     <div class="cont">
 
         <div class="user">
+
             <img src="./img/user.webp" alt="">
             <h4>عبدالمجيد خالد</h4>
         </div>
@@ -76,9 +85,37 @@
         </ul>
 
 
+
+        <div onclick="open_lang() " class="lang_curanc lang_curanc_2">
+            <h4> اللغه : عربي </h4>
+            <h4> العمله : ريال سعودي </h4>
+        </div>
+
     </div>
 
 
+</div>
+
+
+<div class="modal search_bar fade" id="exampleModalToggle_search" aria-hidden="true"
+    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog ">
+
+        <div class="modal-content">
+            <input id="search_bar" value="" type="text" placeholder="بتدور علي اي">
+
+            <div class="product_in_search" style="display: none;" id="product_in_search">
+                <a href="./products.html">
+                    <img src="img/product_1.webp" alt="">
+                    <div class="pro">
+                        <h4>بطاقه تفعيل ويندوز 10</h4>
+                        <span> 120$ <del>150#</del> </span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 
@@ -88,23 +125,20 @@
 <section class="intro_pages">
     <div class="container">
 
-        <div class="links mt-5">
-            <div class="container">
-                <h1>من نحن</h1>
-                <p>تعرف علي جميع منتجاتنا و اسعارها </p>
+        <div class="links_1 mt-5">
+            <img src="./img/catt_1.webp" alt="">
+            <div class="">
+                <h1>مقاله</h1>
                 <ul>
                     <li> <a href="./index.html">الصفحة الرئيسية</a> </li>
                     >>
-                    <li> <a href="./form.html">المنتدي</a> </li>
-                    >>
-                    <li> <a href="./serveces.html">مقاله</a> </li>
+                    <li> <a href="./blog.html">المدونه</a> </li>
                 </ul>
             </div>
         </div>
 
     </div>
 </section>
-
 
 
 

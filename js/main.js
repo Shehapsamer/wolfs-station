@@ -74,7 +74,7 @@ owl.owlCarousel({
 
 
 // ////////////////////////////////////////////
-var owl = $('#slider_3');
+var owl = $('.slider_3');
 owl.owlCarousel({
     items:4, 
   // items change number for slider display on desktop
@@ -211,11 +211,19 @@ function change_login_img_2() {
 // /////////////////
 function forma_switch() {
     let Login = document.getElementById("Login")
+    let log_btn = document.getElementById("log_btn")
+    let reg_btn = document.getElementById("reg_btn")
     Login.classList.add("forma_switch")
+    reg_btn.classList.add("active")
+    log_btn.classList.remove("active")
 }
 function forma_switch_remove() {
     let Login = document.getElementById("Login")
+    let log_btn = document.getElementById("log_btn")
+    let reg_btn = document.getElementById("reg_btn")    
     Login.classList.remove("forma_switch")
+    reg_btn.classList.remove("active")
+    log_btn.classList.add("active")    
 }
 
 
@@ -234,3 +242,20 @@ dark.addEventListener("click", function () {
     }
     
 })
+////////////////
+function fucas(){
+document.getElementById("search_bar").focus();
+}
+
+
+
+document.getElementById("search_bar").addEventListener("input", function() {
+    var input = document.getElementById("search_bar");
+    var element = document.getElementById("product_in_search");
+
+    if (this.value.trim() !== '') {
+        element.style.display = "block"  ;
+    } else {
+        element.style.display = "none " ;
+    }
+});

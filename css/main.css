@@ -198,6 +198,7 @@ button:hover{
     color: var(--textColor);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .navbar .last .cart{
   position: relative !important;
@@ -527,8 +528,8 @@ button:hover{
 .S4_home .sold_out{
   position: absolute;
   top: 30%;
-  left: calc(50% - 55px);
-  padding: 5px 10px;
+  left: calc(50% - 68px);
+  padding: 7px 20px;
   border: 3px solid rgb(255, 255, 255);
   color: rgb(255, 0, 0);
   transform: rotate(-20deg);
@@ -1651,8 +1652,18 @@ button:hover{
 .forma_switch{
   height: 700px;
 }
-/* update single product */
-
+.forma .log_btn{
+  padding: 10px 30px;
+  border: var(--main_borderColor);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--bgColor) !important;
+  margin-top: 30px;
+}
+.forma .active{
+  background-color: var(--btnColor);
+  color: var(--textColor) !important;
+}
 
 
 
@@ -1726,14 +1737,14 @@ button:hover{
   margin-right: 10px;
 }
 .scroll_up:hover svg{
-  animation-name: tranz;
+  animation-name: tranzaaa;
   animation-duration: .2s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   }
   
-  @keyframes tranz {
+  @keyframes tranzaaa {
     0% {
       transform: translateY(50px);
     }
@@ -1907,7 +1918,7 @@ width: 100%;
   color: var(--textColor);
 }
 .lang form option{
-  background-color: var(--Secondary-color);
+  background-color: var(--box_bgColor);
   color: var(--textColor);
 }
 
@@ -1932,63 +1943,6 @@ width: 100%;
 
 
 
- /* media */
- @media screen and (min-width:1px) and (max-width:767px) {
-  h1{
-    font-size: 22px !important;
-  }
-  h3{
-    font-size: 20px !important;
-
-  }
-  p{
-    font-size: 14px !important  ;
-  }
-
-.navbar .nav-logo img {
-  width: 100px !important;
-}
-.payment li img {
-  width: 25px !important;
-}
-.comments .box{
-  width: 100% !important;
-}
-.links ul{
-  flex-direction: column;
-}
-}
-
-
-
-
- @media screen and (min-width:768px) and (max-width:1023px) {
-.S1_home_intro_contant{
-  display: none;
-}
-.intro_pages .form_contant {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.intro_pages .form_contant select {
-  height: 40px !important;
-  margin: 10px 0;
-}
-
-.intro_pages .form_contant input {
-  padding: 0 25px;
-  margin: 10px 0;
-  width: 100% !important;
-}
-
-.ssaa {
-  width: 100% !important;
-}
-
- }
-
 
 .S5_home .disabled{
   opacity: .5;
@@ -1999,8 +1953,30 @@ width: 100%;
   color: var(--bgColor) !important;
   cursor: alias;
 }
-
-
+.S7_home .box{
+  position: relative;
+  height: 300px;
+}
+.S7_home .box span{
+  color: var(--btnColor);
+} 
+.S7_home .box h3{
+  margin: 10px;
+}
+.S7_home .box .photo{
+  border-radius: 5px;
+  height: 70px;
+  width: 50px;
+}
+.S7_home .box .pop_img{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 70px;
+  width: 50px;
+  border: none !important;
+  border-radius: 5px;
+}
 .pop_up[data-tooltip] {
   position: relative;
 }
@@ -2019,7 +1995,7 @@ width: 100%;
    */
   content: attr(data-tooltip);
   background: #000;
-  color: #000;
+  color: var(--body_bgColor);
   font-size: 13px;
   padding: 5px;
   border-radius: 5px;
@@ -2054,7 +2030,7 @@ width: 100%;
 }
 
 .pop_up[data-tooltip][data-placement="top"]::after {
-  border-top-color: #ffffff;
+  border-top-color: var(--textColor);
   border-bottom: none;
   bottom: 80%;
   left: 10px;
@@ -2168,4 +2144,184 @@ width: 100%;
 }
 .img_elproduct{
   position: relative;
+}
+
+/* .dark_mode .S7_home .box .photo {
+  width: 300px !important;
+} */
+.search_bar{
+  padding-top: 150px;
+}
+.search_bar input{
+  width: 100%;
+  border-radius: 5px;
+  border: var(--main_borderColor);
+  height: 40px;
+  padding-right: 20px;
+  background-color: transparent;
+  color: var(--bgColor);
+}
+.search_bar .product_in_search a{
+  display: block;
+  margin: 10px ;
+  display: flex;
+  align-items: center;
+  }
+.search_bar .product_in_search a img{
+  width: 70px;
+  height: 100px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.search_bar .product_in_search a h4 {
+  color: var(--textColor);
+  font-size: 20px;
+}
+.search_bar .product_in_search a span{
+  color: var(--pragrafColor);
+  font-weight: 600px;
+}
+.search_bar .product_in_search a del{
+  color: rgb(142, 5, 5);
+}
+.search_bar .modal-content{
+  background-color: var(--box_bgColor);
+  padding: 10px;
+}
+.search_icon button{
+  background-color: transparent;
+  border: none;
+  margin-right: 20px  ;
+}
+.search_icon svg{
+  color: var(--textColor) ;
+}
+
+
+
+
+
+
+
+
+
+
+/* media */
+@media screen and (min-width:1px) and (max-width:767px) {
+  h1 {
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+.navbar .nav-logo img {
+width: 60px !important;
+height: 60px !important;
+right: calc(50% - 30px);
+}
+.navbar .menu h3 {
+  display: none;
+}
+.moon_icon{
+  margin-right: 5px;
+}
+.search_icon button{
+  margin-right: 10px;
+}
+.lang_curanc {
+  display: none !important;
+}
+.lang_curanc_2{
+  display: block !important;
+  color: var(--textColor);
+  font-size: 18px !important; 
+}
+.lang_curanc_2 h4{
+  font-size: 18px !important;
+}
+.cart h6{
+  font-size: 12px;
+}
+
+.payment li img {
+  width: 25px !important;
+}
+
+.comments .box {
+  width: 100% !important;
+}
+
+.links ul {
+  flex-direction: column;
+}
+.sidebar-display-blo {
+  padding: 25px;
+  width: 70%;
+}
+.sidebar-display-blo .close_sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 70%;
+  z-index: 1;
+  transition: all ease-in .2s;
+  backdrop-filter: blur(8px);
+}
+.lang form{
+  width: 100%;
+}
+
+.foot_final_product{
+  left: 0;
+  right: 0;
+  padding: 30px 20px;
+  height: 200px;
+}
+.foot_final_product .right_side,
+.foot_final_product .lift_side{
+  flex-direction: column;
+}
+.foot_final_product .lift_side button{
+  margin: 5px  0;
+}
+
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .S1_home_intro_contant {
+    display: none;
+  }
+
+  .intro_pages .form_contant {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .intro_pages .form_contant select {
+    height: 40px !important;
+    margin: 10px 0;
+  }
+
+  .intro_pages .form_contant input {
+    padding: 0 25px;
+    margin: 10px 0;
+    width: 100% !important;
+  }
+
+  .ssaa {
+    width: 100% !important;
+  }
+
 }
