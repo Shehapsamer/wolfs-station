@@ -10,7 +10,9 @@ owl.owlCarousel({
     navigation: true,
     autoplay: true,
     smartSpeed: 800,
-    rtl:true,
+    rtl: true,
+    autoplayHoverPause:true,
+    
     nav: true,
     navElement: "dots",
     navText:[`<i class="fa-solid fa-chevron-right"></i>` , `<i class="fa-solid fa-chevron-left"></i>`],
@@ -111,7 +113,39 @@ owl.owlCarousel({
 });
 // /////////
 
-
+// ////////////////////////////////////////////
+var owl = $('#slider_profile');
+owl.owlCarousel({
+    items:4, 
+  // items change number for slider display on desktop
+    autoplayHoverPause:true,
+    loop:true,
+    margin:10,
+    navigation: true,
+    autoplay: true,
+    smartSpeed: 800,
+    rtl:true,
+    navElement: "dots",
+    navText:[`<i class="fa-solid fa-chevron-right"></i>` , `<i class="fa-solid fa-chevron-left"></i>`],
+    paginationSpeed : 800,
+    dots: true,  
+    dotsData: true,
+    responsive:{
+        0:{
+            items: 1,
+        },
+        600:{
+            items: 1,
+        },
+        1100:{
+            items: 1,
+        },
+        1200:{
+            items:1
+        }
+    }
+});
+// /////////
 
 //////////////////////////
 window.addEventListener("scroll" , function () {
